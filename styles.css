@@ -1,0 +1,165 @@
+body {
+    background: linear-gradient(to bottom, #470B56, #9C19BC);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background-color: #C9E5FF;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#time-zone, #current-weather, #weather-details {
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100%; 
+    line-height: 1.6;
+}
+
+#icon {
+    width: 150px !important; 
+    height: 150px !important;
+    margin: 10px auto;
+}
+
+#weather-details {
+    background-color: #C9E5FF; 
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-detail-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.detail-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.detail-icon {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#location-input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-btn {
+    margin-left: 10px;
+    border-radius: 25px; 
+    background-color: #28A745; 
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#search-btn:hover {
+    background-color: rgb(168, 170, 198);
+    color: #222831;
+}
+#hourly-forecast, #five-day-forecast {
+    background-color: #222831; 
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+#hourly-forecast .item, #five-day-forecast .item {
+    color: white;
+    font-size: 16px;
+}
+
+.row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.equal-height > .col-md-4,
+.row.equal-height > .col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row.equal-height > .col-md-4 > .card,
+.row.equal-height > .col-md-6 > .card {
+    flex: 1;
+}
+
+h2, h3, p {
+    font-weight: 600;
+}
+
+#city-name {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#current-time {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#current-date {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#temp {
+    margin-top: -30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#weather-desc {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#sunrise, #sunset, #humidity, #wind-speed, #pressure, #uv-index {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+

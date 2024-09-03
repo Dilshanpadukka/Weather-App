@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="assets/owl.carousel.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="search-bar">
+            <input type="text" id="location-input" placeholder="Search for your preferred city...">
+            <button id="search-btn" class="btn btn-success">Search</button>
+        </div>
+        <div class="row mt-4 equal-height">
+            <div class="col-md-4">
+                <div id="time-zone" class="card">
+                    <h2 id="city-name"></h2>
+                    <h3 id="current-time">12:00:00</h3>
+                    <p id="current-date">Monday, 26 Aug</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="current-weather" class="card">
+                    <img src="default-icon.png" id="icon" alt="weather-icon">
+                    <h2 id="temp">32°</h2>
+                    <p id="weather-desc">Sunny Cloudy</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="weather-details" class="card">
+                    <div class="row">
+                        <div class="col">
+                            <img src="image/sunrise-white 1.png" alt="">
+                            <p id="sunrise">Sunrise: 06:37 AM</p>
+                            <img src="image/sunset-white 1.png" alt="">
+                            <p id="sunset">Sunset: 20:37 PM</p>
+                            <img src="image/humidity 1.png" alt="">
+                            <p id="humidity">Humidity: 41%</p>
+                        </div>
+                        <div class="col">
+                            <img src="image/wind 1.png" alt="">
+                            <p id="wind-speed">Wind Speed: 2km/h</p>
+                            <img src="image/pressure-white 1.png" alt="">
+                            <p id="pressure">Pressure: 997hPa</p>
+                            <img src="image/uv-white 1.png" alt="">
+                            <p id="uv-index">UV: 8</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 equal-height">
+            <div class="col-md-6">
+                <div id="hourly-forecast" class="card owl-carousel">
+                    <div class="item">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="five-day-forecast" class="card owl-carousel">
+                    <div class="item">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/owl.carousel.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
