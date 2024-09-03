@@ -18,25 +18,27 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#time-zone, #current-weather, #weather-details {
+#time-zone,
+#current-weather,
+#weather-details {
     color: black;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    height: 100%; 
+    height: 100%;
     line-height: 1.6;
 }
 
 #icon {
-    width: 150px !important; 
+    width: 150px !important;
     height: 150px !important;
     margin: 10px auto;
 }
 
 #weather-details {
-    background-color: #C9E5FF; 
+    background-color: #C9E5FF;
     color: black;
     padding: 20px;
     border-radius: 15px;
@@ -47,7 +49,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .detail-item {
@@ -84,8 +86,8 @@ body {
 
 #search-btn {
     margin-left: 10px;
-    border-radius: 25px; 
-    background-color: #28A745; 
+    border-radius: 25px;
+    background-color: #28A745;
     border: none;
     padding: 10px 20px;
     color: white;
@@ -96,14 +98,17 @@ body {
     background-color: rgb(168, 170, 198);
     color: #222831;
 }
-#hourly-forecast, #five-day-forecast {
-    background-color: #222831; 
+
+#hourly-forecast,
+#five-day-forecast {
+    background-color: #222831;
     padding: 10px;
     border-radius: 15px;
     color: white;
 }
 
-#hourly-forecast .item, #five-day-forecast .item {
+#hourly-forecast .item,
+#five-day-forecast .item {
     color: white;
     font-size: 16px;
 }
@@ -113,18 +118,20 @@ body {
     flex-wrap: wrap;
 }
 
-.row.equal-height > .col-md-4,
-.row.equal-height > .col-md-6 {
+.row.equal-height>.col-md-4,
+.row.equal-height>.col-md-6 {
     display: flex;
     flex-direction: column;
 }
 
-.row.equal-height > .col-md-4 > .card,
-.row.equal-height > .col-md-6 > .card {
+.row.equal-height>.col-md-4>.card,
+.row.equal-height>.col-md-6>.card {
     flex: 1;
 }
 
-h2, h3, p {
+h2,
+h3,
+p {
     font-weight: 600;
 }
 
@@ -157,9 +164,12 @@ h2, h3, p {
     font-weight: 600;
 }
 
-#sunrise, #sunset, #humidity, #wind-speed, #pressure, #uv-index {
+#sunrise,
+#sunset,
+#humidity,
+#wind-speed,
+#pressure,
+#uv-index {
     font-size: 15px;
     margin: 5px 0;
 }
-
-

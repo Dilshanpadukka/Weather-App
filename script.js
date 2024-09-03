@@ -73,8 +73,8 @@ $(document).ready(function () {
         document.getElementById('sunset').innerText = `Sunset: ${data.forecast.forecastday[0].astro.sunset}`;
 
         const hourlyForecastContainer = $('#hourly-forecast');
-        hourlyForecastContainer.owlCarousel('destroy');  
-        hourlyForecastContainer.empty();  
+        hourlyForecastContainer.owlCarousel('destroy');
+        hourlyForecastContainer.empty();
 
         data.forecast.forecastday[0].hour.forEach(hour => {
             hourlyForecastContainer.append(`
@@ -106,8 +106,8 @@ $(document).ready(function () {
         });
 
         const fiveDayForecastContainer = $('#five-day-forecast');
-        fiveDayForecastContainer.owlCarousel('destroy');  
-        fiveDayForecastContainer.empty();  
+        fiveDayForecastContainer.owlCarousel('destroy');
+        fiveDayForecastContainer.empty();
 
         data.forecast.forecastday.forEach(day => {
             fiveDayForecastContainer.append(`
