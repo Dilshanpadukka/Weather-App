@@ -46,7 +46,7 @@ $(document).ready(function () {
 
     function fetchWeatherData(location) {
         const apiKey = '5e16742af03942c9b3f171441242608';
-        fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5`)
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=10`)
             .then(response => response.json())
             .then(data => {
                 updateWeatherUI(data);
@@ -73,8 +73,8 @@ $(document).ready(function () {
         document.getElementById('sunset').innerText = `Sunset: ${data.forecast.forecastday[0].astro.sunset}`;
 
         const hourlyForecastContainer = $('#hourly-forecast');
-        hourlyForecastContainer.owlCarousel('destroy');  // Destroy previous instance
-        hourlyForecastContainer.empty();  // Clear previous content
+        hourlyForecastContainer.owlCarousel('destroy');  
+        hourlyForecastContainer.empty();  
 
         data.forecast.forecastday[0].hour.forEach(hour => {
             hourlyForecastContainer.append(`
@@ -106,8 +106,8 @@ $(document).ready(function () {
         });
 
         const fiveDayForecastContainer = $('#five-day-forecast');
-        fiveDayForecastContainer.owlCarousel('destroy');  // Destroy previous instance
-        fiveDayForecastContainer.empty();  // Clear previous content
+        fiveDayForecastContainer.owlCarousel('destroy');  
+        fiveDayForecastContainer.empty();  
 
         data.forecast.forecastday.forEach(day => {
             fiveDayForecastContainer.append(`
